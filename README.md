@@ -29,3 +29,27 @@ The system classifies the condition as:
 - OLED display
 - Buzzer and warning LEDs
 - Wireless alert system
+
+## System Architecture
+
+Environmental Sensors
+        ↓
+Embedded Controller
+        ↓
+Sensor Data Processing
+        ↓
+Hazard Detection Logic
+        ↓
+┌─────────┬──────────┬─────────┐
+│  SAFE   │ CAUTION  │ DANGER  │
+└─────────┴──────────┴─────────┘
+        ↓
+Local Warning / Remote Alert
+
+## Core Parameters
+
+| Parameter | Purpose |
+|-----------|---------|
+| Water Level | Detect waterlogging |
+| Rain Intensity | Monitor rainfall condition |
+| Hazard Indicator | Estimate potential electrical hazard |
